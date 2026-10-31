@@ -1,5 +1,8 @@
 name: Test Code Linux
-on: [push,pull_request]
+on:
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
+  workflow_dispatch:
+
 jobs:
   test:
     strategy:
